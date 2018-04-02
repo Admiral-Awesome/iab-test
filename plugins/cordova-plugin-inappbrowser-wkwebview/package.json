@@ -1,5 +1,5 @@
 {
-  "_from": "git+https://github.com/Alytar/cordova-plugin-inappbrowser-wkwebview.git",
+  "_from": "git+https://github.com/Admiral-Awesome/cordova-plugin-inappbrowser-wkwebview.git",
   "_id": "cordova-plugin-inappbrowser-wkwebview@1.0.7",
   "_inBundle": false,
   "_integrity": "",
@@ -7,18 +7,18 @@
   "_phantomChildren": {},
   "_requested": {
     "type": "git",
-    "raw": "https://github.com/Alytar/cordova-plugin-inappbrowser-wkwebview",
-    "rawSpec": "https://github.com/Alytar/cordova-plugin-inappbrowser-wkwebview",
-    "saveSpec": "git+https://github.com/Alytar/cordova-plugin-inappbrowser-wkwebview.git",
-    "fetchSpec": "https://github.com/Alytar/cordova-plugin-inappbrowser-wkwebview.git",
+    "raw": "https://github.com/Admiral-Awesome/cordova-plugin-inappbrowser-wkwebview",
+    "rawSpec": "https://github.com/Admiral-Awesome/cordova-plugin-inappbrowser-wkwebview",
+    "saveSpec": "git+https://github.com/Admiral-Awesome/cordova-plugin-inappbrowser-wkwebview.git",
+    "fetchSpec": "https://github.com/Admiral-Awesome/cordova-plugin-inappbrowser-wkwebview.git",
     "gitCommittish": null
   },
   "_requiredBy": [
     "#USER",
     "/"
   ],
-  "_resolved": "git+https://github.com/Alytar/cordova-plugin-inappbrowser-wkwebview.git#f016b1db4d6f784443be90f4e12c004dd16ae7c7",
-  "_spec": "https://github.com/Alytar/cordova-plugin-inappbrowser-wkwebview",
+  "_resolved": "git+https://github.com/Admiral-Awesome/cordova-plugin-inappbrowser-wkwebview.git#257c73bcac34dbc9f7f0c8eb8d1263c53c308771",
+  "_spec": "https://github.com/Admiral-Awesome/cordova-plugin-inappbrowser-wkwebview",
   "_where": "/Users/prosperity/projects/testiab",
   "author": {
     "name": "Apache Software Foundation"

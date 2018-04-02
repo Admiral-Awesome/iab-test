@@ -11,7 +11,7 @@
     "license": "Apache-2.0",
     "dependencies": {
         "cordova-android": "7.0.0",
-        "cordova-plugin-inappbrowser-wkwebview": "git+https://github.com/Alytar/cordova-plugin-inappbrowser-wkwebview.git",
+        "cordova-plugin-inappbrowser-wkwebview": "git+https://github.com/Admiral-Awesome/cordova-plugin-inappbrowser-wkwebview.git",
         "cordova-plugin-whitelist": "^1.3.3",
         "cordova-plugin-wkwebview-engine": "^1.1.4"
     },

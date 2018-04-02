@@ -1049,7 +1049,12 @@ public class InAppBrowser extends CordovaPlugin {
             // https://issues.apache.org/jira/browse/CB-11248
             view.clearFocus();
             view.requestFocus();
-
+            view.addJavascriptInterface(new MyJsToAndroid(), "my");
+            WebSettings settings = view.getSettings();
+            settings.setJavaScriptEnabled(true);
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+                view.evaluateJavascript(addMyClickCallBackJs(), null);
+            }
             try {
                 JSONObject obj = new JSONObject();
                 obj.put("type", LOAD_STOP_EVENT);
@@ -1076,7 +1081,6 @@ public class InAppBrowser extends CordovaPlugin {
                 LOG.d(LOG_TAG, "Should never happen");
             }
         }
-
         /**
          * On received http auth request.
          */
@@ -1113,6 +1117,29 @@ public class InAppBrowser extends CordovaPlugin {
 
             // By default handle 401 like we'd normally do!
             super.onReceivedHttpAuthRequest(view, handler, host, realm);
+        }
+
+         private String addMyClickCallBackJs() {
+            String js = "javascript:";
+            js += "function myClick(event){" +
+                    "my.myClick(event.target.id)}";
+            js += "document.addEventListener(\"click\",myClick,true);";
+            return js;
+        }
+
+        class MyJsToAndroid {
+            @JavascriptInterface
+            public void myClick(String id) {
+                Log.d("TAG", "myClick-> " + id);
+                try {
+                    JSONObject obj = new JSONObject();
+                    obj.put("type", CLICK_EVENT);
+                    obj.put("id", id);
+                    sendUpdate(obj, true, PluginResult.Status.OK);
+                } catch (JSONException ex) {
+                    LOG.d(LOG_TAG, "Should never happen");
+                }
+            }
         }
     }
 }

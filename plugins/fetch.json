@@ -18,7 +18,7 @@
   "cordova-plugin-inappbrowser-wkwebview": {
     "source": {
       "type": "registry",
-      "id": "https://github.com/Alytar/cordova-plugin-inappbrowser-wkwebview"
+      "id": "https://github.com/Admiral-Awesome/cordova-plugin-inappbrowser-wkwebview"
     },
     "is_top_level": true,
     "variables": {}

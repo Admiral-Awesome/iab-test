@@ -22,12 +22,11 @@ var app = {
         document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
     },
 
-    // deviceready Event Handler
-    //
-    // Bind any cordova events here. Common events are:
-    // 'pause', 'resume', etc.
     onDeviceReady: function() {
-        cordova.InAppBrowser.open('http://wizardly-nobel-f4b173.bitballoon.com/', "_blank", "location=no,toolbar=no,clearsessioncache=yes");
+        var ref = cordova.InAppBrowser.open('http://wizardly-nobel-f4b173.bitballoon.com/', "_blank", "location=no,toolbar=no,clearsessioncache=yes");
+        ref.addEventListener('click', function(event) {
+            alert(JSON.stringify(event));
+        });
     }
 };
 

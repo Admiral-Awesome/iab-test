@@ -32,3 +32,6 @@ Some advantages of using WKWebView over UIWebView include:
 ## Plugin usage and API
 
 The plugin API is identical to [cordova-plugin-inappbrowser](https://github.com/apache/cordova-plugin-inappbrowser).
+
+
+added event listener click
