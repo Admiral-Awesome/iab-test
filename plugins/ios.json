@@ -1,0 +1,21 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-inappbrowser-wkwebview": {
+      "PACKAGE_NAME": "com.zazmic.testiab"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.zazmic.testiab"
+    },
+    "cordova-plugin-wkwebview-engine": {
+      "PACKAGE_NAME": "com.zazmic.testiab"
+    }
+  },
+  "dependent_plugins": {}
+}

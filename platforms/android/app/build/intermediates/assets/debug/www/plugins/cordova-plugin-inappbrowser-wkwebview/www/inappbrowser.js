@@ -33,12 +33,13 @@ cordova.define("cordova-plugin-inappbrowser-wkwebview.inappbrowser", function(re
     var urlutil = require('cordova/urlutil');
 
     function InAppBrowser() {
-       this.channels = {
-            'loadstart': channel.create('loadstart'),
-            'loadstop' : channel.create('loadstop'),
-            'loaderror' : channel.create('loaderror'),
-            'exit' : channel.create('exit')
-       };
+        this.channels = {
+             'loadstart': channel.create('loadstart'),
+             'loadstop' : channel.create('loadstop'),
+             'loaderror' : channel.create('loaderror'),
+             'click' : channel.create('click'),
+             'exit' : channel.create('exit')
+        };
     }
 
     InAppBrowser.prototype = {

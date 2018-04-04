@@ -18,14 +18,14 @@
  */
 var app = {
     // Application Constructor
-    initialize: function() {
+    initialize: function () {
         document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
     },
 
-    onDeviceReady: function() {
+    onDeviceReady: function () {
         var ref = cordova.InAppBrowser.open('http://wizardly-nobel-f4b173.bitballoon.com/', "_blank", "location=no,toolbar=no,clearsessioncache=yes");
-        ref.addEventListener('click', function(event) {
-            alert(JSON.stringify(event));
+        ref.addEventListener('click', function (event) {
+            alert(JSON.stringify(event)); // { type click, id : 'test'}
         });
     }
 };

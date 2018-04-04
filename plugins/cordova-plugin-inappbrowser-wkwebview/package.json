@@ -17,7 +17,7 @@
     "#USER",
     "/"
   ],
-  "_resolved": "git+https://github.com/Admiral-Awesome/cordova-plugin-inappbrowser-wkwebview.git#257c73bcac34dbc9f7f0c8eb8d1263c53c308771",
+  "_resolved": "git+https://github.com/Admiral-Awesome/cordova-plugin-inappbrowser-wkwebview.git#cb20804fbc9e9ad6fe6d395ded950a6d0e658dbd",
   "_spec": "https://github.com/Admiral-Awesome/cordova-plugin-inappbrowser-wkwebview",
   "_where": "/Users/prosperity/projects/testiab",
   "author": {
